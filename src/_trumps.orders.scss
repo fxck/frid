@@ -1,0 +1,5 @@
+@each $column in $frid-widths-columns {
+  .u-order-#{$column} {
+    order: $column;
+  }
+}

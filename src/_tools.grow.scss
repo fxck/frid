@@ -1,0 +1,34 @@
+///*------------------------------------*\
+//    #GROWS
+//\*------------------------------------*/
+
+// inherits settings from _tools.widths
+@mixin frid-grow($frid-widths-columns, $frid-widths-breakpoint: null) {
+
+  // Loop through the number of columns for each denominator of our fractions.
+  @each $frid-widths-denominator in $frid-widths-columns {
+
+    // If we’re trying to make wholes, just spit a 100% width utility out
+    // one time only.
+    @if ($frid-widths-denominator == 1) {
+      .u-grow-1#{$frid-widths-delimiter}1#{$frid-widths-breakpoint} {
+        flex-grow: 1 !important;
+      }
+    } @else {
+
+      // Begin creating a numberator for our fraction up until we hit the
+      // denominator.
+      @for $frid-widths-numerator from 1 to $frid-widths-denominator {
+
+        // Build a class in the format `.u-3/4` or `.u-3-of-4`.
+        .u-grow-#{$frid-widths-numerator}#{$frid-widths-delimiter}#{$frid-widths-denominator}#{$frid-widths-breakpoint} {
+          flex-grow: ($frid-widths-numerator / $frid-widths-denominator) !important;
+        }
+
+      }
+
+    }
+
+  }
+
+}

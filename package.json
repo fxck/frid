@@ -1,0 +1,15 @@
+{
+  "name": "frid",
+  "version": "0.0.0",
+  "authors": [
+    "Ales Rechtorik <foxxcz@gmail.com>"
+  ],
+  "description": "BEM flexbox grid",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-sass": "2.2.0",
+    "gulp-rename": "1.2.2",
+    "superstatic": "4.0.2"
+  }
+}

@@ -1,0 +1,3 @@
+@mixin frid-fixed-width($width) {
+  flex-basis: $width + $frid-gutter;
+}

@@ -1,0 +1,215 @@
+$frid-gutter: 24px !default;
+
+.o-frid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  list-style-type: none;
+  margin-left: -$frid-gutter;
+
+  .o-frid {
+  	flex: 1 1 auto;
+  }
+}
+
+.o-frid--wrap {
+  flex-wrap: wrap;
+}
+
+.o-frid--no-wrap {
+  flex-wrap: nowrap;
+}
+
+.o-frid--wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.o-frid--direction-row {
+  flex-direction: row;
+}
+
+.o-frid--direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.o-frid--direction-column {
+  flex-direction: column;
+}
+
+.o-frid--direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.o-frid--align-start {
+  align-items: flex-start;
+}
+
+.o-frid--align-end {
+  align-items: flex-end;
+}
+
+.o-frid--align-end [class*="grid__col"] {
+  vertical-align: bottom;
+}
+
+.o-frid--align-center {
+  align-items: center;
+
+  [class*="grid__col"] {
+    vertical-align: middle;
+  }
+}
+
+.o-frid--align-baseline {
+  align-items: baseline;
+
+  [class*="grid__col"] {
+    vertical-align: baseline;
+  }
+}
+
+.o-frid--align-content-start {
+  align-content: flex-start;
+}
+
+.o-frid--align-content-end {
+  align-content: flex-end;
+
+  [class*="grid__col"] {
+    vertical-align: bottom;
+  }
+}
+
+.o-frid--align-content-center {
+  align-content: center;
+}
+
+.o-frid--align-content-space-between {
+  align-content: space-between;
+}
+
+.o-frid--align-content-space-around {
+  align-content: space-around;
+}
+
+.o-frid--align-self-stretch {
+  align-self: stretch;
+}
+
+.o-frid--align-self-start {
+  align-self: flex-start;
+}
+
+.o-frid--align-self-end {
+  align-self: flex-end;
+  vertical-align: bottom;
+}
+
+.o-frid--align-self-center {
+  align-self: center;
+  vertical-align: middle;
+}
+
+.o-frid--align-self-baseline {
+  align-self: baseline;
+  vertical-align: baseline;
+}
+
+.o-frid--justify-start {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.o-frid--justify-end {
+  text-align: right;
+  text-align-last: right;
+  justify-content: flex-end;
+}
+
+.o-frid--justify-end .o-frid__cell {
+  text-align: left;
+  text-align: start;
+  text-align: initial;
+  text-align-last: left;
+  text-align-last: start;
+  text-align-last: initial;
+}
+
+.o-frid--justify-center {
+  text-align: center;
+  text-align-last: center;
+  justify-content: center;
+}
+
+.o-frid--justify-center .o-frid__cell {
+  text-align: left;
+  text-align: start;
+  text-align: initial;
+  text-align-last: left;
+  text-align-last: start;
+  text-align-last: initial;
+}
+
+.o-frid--justify-space-between {
+  text-align: justify;
+  text-align-last: justify;
+  justify-content: space-between;
+}
+
+.o-frid--justify-space-between .o-frid__cell {
+  text-align: left;
+  text-align: start;
+  text-align: initial;
+  text-align-last: left;
+  text-align-last: start;
+  text-align-last: initial;
+}
+
+.o-frid--justify-space-around {
+  text-align: justify;
+  text-align-last: justify;
+  justify-content: space-around;
+}
+
+.o-frid--justify-space-around .o-frid__cell {
+  text-align: left;
+  text-align: start;
+  text-align: initial;
+  text-align-last: left;
+  text-align-last: start;
+  text-align-last: initial;
+}
+
+.o-frid__col {
+  display: flex;
+  width: 100%;
+  padding-left: $frid-gutter;
+  flex-direction: column;
+  text-align: left;
+  text-align: start;
+  text-align: initial;
+  text-align-last: left;
+  text-align-last: start;
+  text-align-last: initial;
+}
+
+.o-frid__cell {
+  display: block;
+  flex: 1 1 auto;
+}
+
+.o-frid__col-auto {
+  flex: 1 0 0px;
+  width: auto !important;
+  max-width: 100%;
+  padding-left: $frid-gutter;
+}
+
+.o-frid__col-fixed {
+  width: auto !important;
+  max-width: 100%;
+  padding-left: $frid-gutter;
+}

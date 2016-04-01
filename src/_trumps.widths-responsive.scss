@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    #WIDTHS-RESPONSIVE
+\*------------------------------------*/
+
+/**
+ * Responsive width classes based on your responsive settings.
+ */
+
+// By default we will create wholes, halves, thirds, quarters, and fifths.
+// Predefine this Map to override.
+$frid-widths-columns-responsive: (
+  1,
+  2,
+  3,
+  4,
+  5,
+) !default;
+
+// Loop over our breakpoints defined in _settings.responsive.scss
+@each $breakpoint in $frid-breakpoints {
+
+  // Get the name of the breakpoint.
+  $alias: nth($breakpoint, 1);
+
+  @include frid-media-query($alias) {
+
+    // Loop through each of our column sizes and generate its responsive width
+    // classes.
+    @each $frid-widths-column in $frid-widths-columns-responsive {
+      @include frid-widths($frid-widths-column, -#{$alias});
+      @include frid-grow($frid-widths-column, -#{$alias});
+    }
+
+  }
+
+}
