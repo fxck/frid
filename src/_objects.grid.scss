@@ -8,7 +8,7 @@ $frid-gutter: 24px !default;
   width: 100%;
   max-width: 100%;
   list-style-type: none;
-  margin-left: -$frid-gutter;
+  margin-top: -$frid-gutter;
 
   .o-frid {
   	flex: 1 1 auto;
@@ -29,6 +29,8 @@ $frid-gutter: 24px !default;
 
 .o-frid--direction-row {
   flex-direction: row;
+  margin-top: 0;
+  margin-left: 0;
 }
 
 .o-frid--direction-row-reverse {
@@ -37,6 +39,8 @@ $frid-gutter: 24px !default;
 
 .o-frid--direction-column {
   flex-direction: column;
+  margin-top: $frid-gutter;
+  margin-left: 0;
 }
 
 .o-frid--direction-column-reverse {
