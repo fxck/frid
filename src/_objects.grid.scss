@@ -17,8 +17,9 @@ $frid-gutter: 24px !default;
   margin-left: 0;
 
   .o-frid__col,
-  .o-frid__col-auto {
-    padding-left: $frid-gutter;
+  .o-frid__col-auto,
+  .o-frid__col-fixed {
+    padding-left: 0;
   }
 }
 
@@ -44,6 +45,7 @@ $frid-gutter: 24px !default;
 
 .o-frid--direction-column {
   flex-direction: column;
+  margin-left: 0;
 }
 
 .o-frid--direction-column-reverse {
