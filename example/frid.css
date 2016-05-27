@@ -558,9 +558,9 @@
 
 .o-frid--flush {
   margin-left: 0; }
-  .o-frid--flush .o-frid__col,
-  .o-frid--flush .o-frid__col-auto,
-  .o-frid--flush .o-frid__col-fixed {
+  .o-frid--flush > .o-frid__col,
+  .o-frid--flush > .o-frid__col-auto,
+  .o-frid--flush > .o-frid__col-fixed {
     padding-left: 0; }
 
 .o-frid--wrap {
@@ -591,7 +591,8 @@
 .o-frid--direction-column {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-left: 0; }
 
 .o-frid--direction-column-reverse {
   -webkit-flex-direction: column-reverse;

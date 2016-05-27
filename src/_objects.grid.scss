@@ -16,9 +16,9 @@ $frid-gutter: 24px !default;
 .o-frid--flush {
   margin-left: 0;
 
-  .o-frid__col,
-  .o-frid__col-auto,
-  .o-frid__col-fixed {
+  > .o-frid__col,
+  > .o-frid__col-auto,
+  > .o-frid__col-fixed {
     padding-left: 0;
   }
 }
