@@ -23,6 +23,26 @@ $frid-gutter: 24px !default;
   }
 }
 
+.o-frid--half {
+  margin-left: -($frid-gutter / 2);
+
+  > .o-frid__col,
+  > .o-frid__col-auto,
+  > .o-frid__col-fixed {
+    padding-left: ($frid-gutter / 2);
+  }
+}
+
+.o-frid--double {
+  margin-left: -($frid-gutter * 2);
+
+  > .o-frid__col,
+  > .o-frid__col-auto,
+  > .o-frid__col-fixed {
+    padding-left: ($frid-gutter * 2);
+  }
+}
+
 .o-frid--wrap {
   flex-wrap: wrap;
 }

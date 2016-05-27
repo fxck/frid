@@ -563,6 +563,20 @@
   .o-frid--flush > .o-frid__col-fixed {
     padding-left: 0; }
 
+.o-frid--half {
+  margin-left: -12px; }
+  .o-frid--half > .o-frid__col,
+  .o-frid--half > .o-frid__col-auto,
+  .o-frid--half > .o-frid__col-fixed {
+    padding-left: 12px; }
+
+.o-frid--double {
+  margin-left: -48px; }
+  .o-frid--double > .o-frid__col,
+  .o-frid--double > .o-frid__col-auto,
+  .o-frid--double > .o-frid__col-fixed {
+    padding-left: 48px; }
+
 .o-frid--wrap {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
